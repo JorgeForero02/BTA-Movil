@@ -1,0 +1,1 @@
+package org.joml; public class Vector3i implements Vector3ic { public int x, y, z; public Vector3i(){} public Vector3i(int x,int y,int z){} public int x(){return x;} public int y(){return y;} public int z(){return z;} }

@@ -1,0 +1,10 @@
+# The BTA game and everything that carries it inside: BTA cannot be redistributed.
+BTA-Movil.jar
+bta.jar
+*.mmc.zip
+*-Amethyst.zip
+*-Zalith.zip
+# Local material outside the repository: original game, game libraries, generated packages.
+_local/
+# Build outputs (they go as release assets, not into the repository).
+BTA-Movil-Installer.jar

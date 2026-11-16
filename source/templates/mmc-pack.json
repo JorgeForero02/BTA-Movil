@@ -1,0 +1,13 @@
+{
+    "components": [
+        {
+            "cachedName": "Minecraft",
+            "cachedVersion": "b1.7.3",
+            "important": true,
+            "dependencyOnly": false,
+            "uid": "net.minecraft",
+            "version": "b1.7.3"
+        }
+    ],
+    "formatVersion": 1
+}

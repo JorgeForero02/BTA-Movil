@@ -1,0 +1,9 @@
+#!/bin/sh
+# Full verification (rebuild + tests with Java 17) if the original game is in _local/.
+# Without it (another machine, a cloud session) it cannot run: warn and go on.
+if [ -f _local/bta.v8.0.1.mmc.zip ]; then
+  if command -v cygpath >/dev/null 2>&1; then V=scripts/verify-docker.sh; else V=scripts/verify.sh; fi
+  bash "$V" --full || { echo ""; echo "Full verification failed. The push is stopped."; exit 1; }
+else
+  echo "pre-push: no _local/bta.v8.0.1.mmc.zip, the full verification is skipped."
+fi

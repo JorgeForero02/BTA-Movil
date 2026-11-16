@@ -1,0 +1,9 @@
+#!/bin/sh
+# Quick verification: shell syntax and compilation of what is self-contained.
+# The full verification needs the original game and is run by hand: bash scripts/verify-docker.sh --full
+bash scripts/verify.sh || {
+  echo ""
+  echo "scripts/verify.sh failed. The commit is stopped."
+  echo "Fix the code; do not disable the hook."
+  exit 1
+}
