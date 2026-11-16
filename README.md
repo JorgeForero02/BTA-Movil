@@ -11,6 +11,7 @@ draws directly with OpenGL ES 3.2, with performance work for phones and console-
 - **Version:** 1.0.0 (for BTA 8.0.1 only)
 - **Download:** the installer `BTA-Movil-Installer.jar` from the [Releases](../../releases) page
 - **Author:** JorgeForero02
+- **No PC needed:** the installer runs on the phone itself, from the launcher's "run .jar" option, and on Amethyst it creates the BTA-Movil version directly (no zip to import).
 
 ## Contents
 
@@ -99,15 +100,19 @@ BTA-Movil does not include the game. Each player uses their own official copy.
 
 1. Download the official BTA 8.0.1 for MultiMC/Prism: `bta.v8.0.1.mmc.zip`. Do not use copies from other
    sites, another BTA version or the server file.
-2. Run the installer, `BTA-Movil-Installer.jar`.
-   - On the phone (Amethyst or Zalith): save the jar in Downloads, use the launcher's "run .jar" option, pick
-     it and, when asked, choose the `bta.v8.0.1.mmc.zip` you downloaded (or the `bta.jar` inside it).
-   - On a PC with Java 17: `java -jar BTA-Movil-Installer.jar`, then copy the generated zips to the phone.
+2. Run the installer, `BTA-Movil-Installer.jar`. **Everything can be done on the phone; a PC is optional.**
+   - **On the phone (Amethyst or Zalith), no PC needed:** save the jar in Downloads, use the launcher's
+     "run .jar" option, pick it and, when asked, choose the `bta.v8.0.1.mmc.zip` you downloaded (or the
+     `bta.jar` inside it). It finds the launcher's `.minecraft` folder and, with "Also install into this
+     .minecraft folder" ticked (the default when it finds one), **creates the BTA-Movil version directly**:
+     on Amethyst just pick it and play, no zip needed. It also creates the zips (for Zalith, or as a backup).
+   - Optional, on a PC with Java 17: `java -jar BTA-Movil-Installer.jar`, then copy the generated zips to the phone.
    - Without a window: `./create-modpack.sh <bta.jar | bta.v8.0.1.mmc.zip | folder> [output_folder] [--install <.minecraft>]`
      (`create-modpack.bat` on Windows).
    - It creates `BTA-Movil-1.0.0-Amethyst.zip` and `BTA-Movil-1.0.0-Zalith.zip`. They are only for you: do not share them.
 3. Install in your launcher.
-   - **Amethyst:** unzip `BTA-Movil-1.0.0-Amethyst.zip` inside `.minecraft` and accept replacing. It changes
+   - **Amethyst:** if you ran the installer on the phone with the install option ticked, this step is
+     already done: pick the BTA-Movil version. Otherwise, unzip `BTA-Movil-1.0.0-Amethyst.zip` inside `.minecraft` and accept replacing. It changes
      `versions/BTA-Movil/BTA-Movil.jar` and its `.json`, and leaves `README.txt`, `recommended-options.txt` and
      `BTA-Movil-controls.json` in `.minecraft`; your worlds and your `options.txt` are not touched.
      Then pick the version BTA-Movil.
