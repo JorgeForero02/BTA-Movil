@@ -284,4 +284,6 @@ if `_local/bta.v8.0.1.mmc.zip` exists).
   installer contain none of their code or assets; each player needs their own official copy of BTA 8.0.1.
 - Do not share the patched `BTA-Movil.jar` or the generated zips: share the installer (see
   [SHARING.md](SHARING.md)).
-- No license has been chosen yet for the code in this repository: until then, all rights are reserved.
+- **License:** BTA-Movil is a modification of Better than Adventure, so its use and distribution are subject to
+  the terms the Better than Adventure team sets for BTA and its modifications (see
+  [betterthanadventure.net](https://betterthanadventure.net)). This repository grants no separate license.
