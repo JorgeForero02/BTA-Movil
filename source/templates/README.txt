@@ -80,16 +80,22 @@ WHAT IT BRINGS
   - Shortcuts create-modpack.sh and create-modpack.bat.
   - Stutter meter (-Dbta.prof=true).
 
-AMETHYST (BTA-Movil-1.0.0-Amethyst.zip)
-  1. Unzip the zip inside .minecraft and accept replacing. It changes
-     versions/BTA-Movil/BTA-Movil.jar and its .json, and leaves
-     README.txt, recommended-options.txt and BTA-Movil-controls.json
-     in .minecraft (replaced if they were already there). Your worlds
-     and your options.txt are not touched.
-  2. Pick the BTA-Movil version.
+AMETHYST
+  1. Run BTA-Movil-Installer.jar with "run .jar" and pick the
+     bta.v8.0.1.mmc.zip (or its bta.jar). With "Also install into this
+     .minecraft folder" ticked (the default), it installs the
+     BTA-Movil version directly.
+  2. Go to install a new version > Installed > BTA-Movil. That is all.
+  If you ran the installer on a PC (or with that option unticked):
+  before step 2, unzip BTA-Movil-1.0.0-Amethyst.zip inside .minecraft
+  and accept replacing. It changes versions/BTA-Movil/BTA-Movil.jar and
+  its .json, and leaves README.txt, recommended-options.txt and
+  BTA-Movil-controls.json in .minecraft (replaced if they were already
+  there). Your worlds and your options.txt are not touched.
 
 ZALITH (BTA-Movil-1.0.0-Zalith.zip)
-  1. Import the zip as a modpack.
+  1. Run the installer to create the modpack zip, then use
+     "Import modpack (MMC)" with BTA-Movil-1.0.0-Zalith.zip.
   2. Use the version name BTA-Movil.
   3. If you already have worlds, copy your saves folder.
   It comes with render distance 10 and fancy graphics on.

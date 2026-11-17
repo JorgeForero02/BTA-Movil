@@ -1,60 +1,49 @@
-# BTA-Movil 1.0.0 - How to share it
+# Sharing BTA-Movil 1.0.0
 
 BTA-Movil is a port of Better than Adventure 8.0.1 to Android, made by JorgeForero02.
 
-The installer does NOT include the game:
-
-- Each player supplies their own official copy of BTA 8.0.1.
-- The installer adapts it.
-
-So the installer can be shared, but never the already patched game.
+The installer doesn't include the game. Each player brings their own official copy of BTA 8.0.1 and the
+installer adapts it. That's why the installer can be shared, but the patched game can't.
 
 ## A) For the author
 
 ### What to upload
 
-As release files:
+Only `BTA-Movil-Installer.jar`, as a release file.
 
-- `BTA-Movil-Installer.jar`
-
-Before uploading, open the file and confirm it does not contain any of the files in "Never upload" below.
+Before uploading it, open it and make sure none of the files under "Never upload" below ended up inside.
 
 ### Where
 
-- **GitHub Releases (recommended):**
-  1. Create a release with the tag `v1.0.0`.
-  2. Attach the installer as a release file.
-- **Modrinth:**
-  1. Check their content rules first.
-  2. Upload only the installer.
-  3. Link the official BTA page instead of uploading anything from BTA.
-- **Official BTA community (Discord/forum):**
-  - Post in the projects or mods channel, with the presentation text.
-  - Put the link to the release instead of the loose file, so people always download the latest version.
+- **GitHub Releases (recommended):** create a release with the tag `v1.0.0` and attach the installer.
+- **Modrinth:** read their content rules first. Upload only the installer, and link the official BTA page
+  instead of uploading anything from BTA.
+- **The official BTA community (Discord or forum):** post in the projects or mods channel with the text
+  below. Link the release instead of attaching the file, so people always get the latest version.
 
-Respect each site's rules and make clear that it is an unofficial port.
+Follow each site's rules and make it clear that this is an unofficial port.
 
-### Presentation text (copy and paste)
+### Post text (copy and paste)
 
 ```
 BTA-Movil 1.0.0 - Better than Adventure 8.0.1 on Android
 
-Unofficial port of BTA 8.0.1 for Amethyst and Zalith, by JorgeForero02.
-- Draws directly with OpenGL ES.
+An unofficial port of BTA 8.0.1 for Amethyst and Zalith, by JorgeForero02.
+- Renders directly with OpenGL ES.
 - Builds chunks on a separate thread.
-- Does not draw hidden caves or entities.
-- Spreads world decoration over time.
-- Brings console-style menus when playing with a gamepad (3x3 and 2x2 crafting included).
+- Skips caves and entities you can't see.
+- Spreads world decoration out over time.
+- Console-style menus when you play with a controller, 3x3 and 2x2 crafting included.
 
-It does not include the game:
-1. Download the official BTA 8.0.1 (MultiMC/Prism zip).
-2. Run BTA-Movil-Installer.jar; it creates the files for your launcher.
+The game isn't included:
+1. Download the official BTA 8.0.1 (the MultiMC/Prism zip).
+2. Run BTA-Movil-Installer.jar and it creates the files for your launcher.
 Full steps in SHARING.md.
 
 Requirements:
 - Android 7+, 64-bit, OpenGL ES 3.2.
 - A phone with 6 GB of RAM is recommended.
-- Java 17, Krypton Wrapper renderer.
+- Java 17 and the Krypton Wrapper renderer.
 - Tested on a Mali-G615.
 
 Download: (link to the v1.0.0 release)
@@ -63,104 +52,105 @@ Known issues: see "Known issues and troubleshooting" in the README.
 
 ### Requirements (to post wherever you publish)
 
-- Android 7 or higher, 64-bit.
-- A GPU with OpenGL ES 3.2 (check with DevCheck or GPU Info).
+- Android 7 or newer, 64-bit.
+- A GPU with OpenGL ES 3.2 (you can check it with DevCheck or GPU Info).
 - A phone with 6 GB of RAM is recommended.
-- Game memory: 2048-4096 MB.
+- 2048-4096 MB of memory for the game.
 - Amethyst or Zalith, with Java 17 and the Krypton Wrapper renderer.
 - An official copy of BTA 8.0.1 (each player downloads their own).
 - Tested on a Mali-G615.
 
-### Never upload (neither to the repository nor to the release)
+### Never upload (not to the repository and not to the release)
 
 - `BTA-Movil.jar`
 - `BTA-Movil-1.0.0-Amethyst.zip`
 - `BTA-Movil-1.0.0-Zalith.zip`
-- `bta.jar` (nor the zip `bta.v8.0.1.mmc.zip`)
+- `bta.jar` (or the `bta.v8.0.1.mmc.zip` it comes in)
 
-Why:
+All of these contain Better than Adventure's code. `BTA-Movil.jar` is built from `bta.jar`, and the zips
+include it. BTA can't be redistributed, but the installer can, because it applies the changes to the copy
+each player downloads.
 
-- All of them contain the code of Better than Adventure: `BTA-Movil.jar` is generated from the `bta.jar`,
-  and the zips include it.
-- BTA cannot be redistributed.
-- What you can share is the installer: it applies the changes to the copy each player downloads.
-
-If someone asks for "the ready-made jar", send them to the installer.
+If someone asks you for "the ready-made jar", point them to the installer.
 
 ## B) For the player
 
-### 0. Before: check your phone
+### 0. Check your phone first
 
-- Install DevCheck or GPU Info and look at the OpenGL ES version. It must say OpenGL ES 3.2. If your phone
-  does not reach 3.2, it is not supported.
-- Also check that Android is 64-bit and version 7 or higher.
+- Install DevCheck or GPU Info and look at the OpenGL ES version. It has to say OpenGL ES 3.2. If your
+  phone doesn't reach 3.2, it isn't supported.
+- Also make sure Android is 64-bit and version 7 or newer.
 
 ### 1. Download the official BTA 8.0.1
 
 - Go to the official Better than Adventure page.
 - Download version 8.0.1 for MultiMC/Prism: `bta.v8.0.1.mmc.zip`
-- Do not use copies from other sites, another BTA version, or the server file.
+- Don't use copies from other sites, a different BTA version or the server file.
 
 ### 2. Run the installer
 
-On the phone (Amethyst or Zalith):
+On your phone (Amethyst or Zalith):
 
-1. Save `BTA-Movil-Installer.jar` in Downloads.
-2. In the launcher use the "run .jar" option.
+1. Save `BTA-Movil-Installer.jar` to Downloads.
+2. Open the launcher's "run .jar" option.
 3. Pick `BTA-Movil-Installer.jar`.
-4. When asked, choose the `bta.v8.0.1.mmc.zip` you downloaded (or the `bta.jar` inside it).
+4. When it asks, choose the `bta.v8.0.1.mmc.zip` you downloaded (or the `bta.jar` inside it).
+
+On Amethyst, with "Also install into this .minecraft folder" ticked (it is by default), the installer
+installs the BTA-Movil version for you.
 
 On a PC (with Java 17):
 
-1. Run: `java -jar BTA-Movil-Installer.jar`
-2. Copy the generated zips to the phone.
+1. Run `java -jar BTA-Movil-Installer.jar`
+2. Copy the zips it creates to your phone.
 
-The installer creates these two files:
+Either way, the installer creates these two files:
 
 - `BTA-Movil-1.0.0-Amethyst.zip`
 - `BTA-Movil-1.0.0-Zalith.zip`
 
-They are only for you: do not share them.
+They're just for you, so please don't share them. The Zalith one is the modpack you'll import.
 
-### 3. Install in your launcher
+### 3. Set it up in your launcher
 
 Amethyst:
 
-1. Unzip `BTA-Movil-1.0.0-Amethyst.zip` inside `.minecraft`.
-2. Accept replacing. It changes `versions/BTA-Movil/BTA-Movil.jar` and its `.json`, and leaves
-   `README.txt`, `recommended-options.txt` and `BTA-Movil-controls.json` in `.minecraft`; your worlds and
-   your `options.txt` are not touched.
-3. Pick the version BTA-Movil.
+- If you ran the installer on your phone, go to Install a new version > Installed > BTA-Movil, and you're done.
+- If you ran it on a PC (or unticked the install option):
+  1. Unzip `BTA-Movil-1.0.0-Amethyst.zip` into `.minecraft` and accept replacing the files. That updates
+     `versions/BTA-Movil/BTA-Movil.jar` and its `.json` and puts `README.txt`, `recommended-options.txt`
+     and `BTA-Movil-controls.json` in `.minecraft`. Your worlds and your `options.txt` aren't touched.
+  2. Go to Install a new version > Installed > BTA-Movil.
 
 Zalith:
 
-1. Import `BTA-Movil-1.0.0-Zalith.zip` as a modpack.
-2. Use the version name BTA-Movil.
-3. If you already have worlds, copy your `saves` folder.
+1. Use "Import modpack (MMC)" with `BTA-Movil-1.0.0-Zalith.zip`.
+2. Name the version BTA-Movil.
+3. If you already have worlds, copy your `saves` folder over.
 
-In both: Krypton Wrapper renderer, Java 17 and 2048-4096 MB of memory.
+Either way, use the Krypton Wrapper renderer, Java 17 and 2048-4096 MB of memory.
 
-### 4. If the installer says the bta.jar is not valid
+### 4. If the installer says your bta.jar isn't valid
 
-It means the file is not exactly the official BTA 8.0.1. Usual causes:
+That means the file isn't exactly the official BTA 8.0.1. It's usually one of these:
 
-- It is another BTA version.
-- The download was incomplete or damaged.
-- It is the server jar and not the client one.
-- It is an already modified jar: with mods, or the `BTA-Movil.jar` of a previous install.
-- It was downloaded from an unofficial site.
+- A different BTA version.
+- An incomplete or broken download.
+- The server jar instead of the client.
+- A jar that was already modified, either with mods or the `BTA-Movil.jar` from an earlier install.
+- A download from an unofficial site.
 
-Fix:
+To fix it:
 
 1. Delete the file.
 2. Download `bta.v8.0.1.mmc.zip` again from the official page.
 3. Run the installer again.
-4. If it still fails on the phone, try the installer on a PC with: `java -jar BTA-Movil-Installer.jar`
+4. If it still fails on your phone, try it on a PC with `java -jar BTA-Movil-Installer.jar`
 
 ### 5. If something goes wrong while playing
 
-- If it starts black or closes at start (for example with another renderer), try the Java argument
-  `-Dbta.gles=false`.
-- If with a gamepad connected you cannot use the classic 3x3 table (labels, copying maps, chain mail), turn
-  off Options > Controls > Console Style (Legacy) > Console Crafting.
-- The other options and arguments are in the README.
+- If the screen stays black or the game closes on startup (for example with a different renderer), try
+  the Java argument `-Dbta.gles=false`.
+- If you have a controller connected and can't use the classic 3x3 table (for labels, copying maps or
+  chain mail), turn off Options > Controls > Console Style (Legacy) > Console Crafting.
+- The rest of the options and arguments are in the README.
